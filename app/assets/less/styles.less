@@ -1,0 +1,22 @@
+@import "variables";
+
+html {
+    font-size: @fontSizeDesktop;
+    @media @mobile {
+        font-size: @fontSizeMobile;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapperPage {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+@import "buttons";
+@import "header";

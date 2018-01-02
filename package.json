@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "\"Задание 2. Верстка по макету.\"",
   "main": "index.js",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
   "scripts": {
     "prestart": "npm i",
     "dev": "webpack-dev-server --content-base website --colors",
@@ -20,6 +24,7 @@
   },
   "dependencies": {
     "angular": "^1.6.8",
+    "autoprefixer": "^7.2.4",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
@@ -37,6 +42,7 @@
     "ng-annotate-webpack-plugin": "^0.2.1-pre",
     "ngtemplate-loader": "^2.0.1",
     "node": "^9.3.0",
+    "postcss-loader": "^2.0.9",
     "style-loader": "^0.19.1",
     "svg-inline-loader": "^0.8.0",
     "svg-url-loader": "^2.3.1"
