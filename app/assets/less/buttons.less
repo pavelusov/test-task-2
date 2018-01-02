@@ -1,0 +1,39 @@
+@import "variables";
+
+.button {
+    font-family: HelveticaNeue-Medium;
+    font-size: 0.8125rem;
+    letter-spacing: 0;
+    padding: 10px 16px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    &.button_blue {
+        background: @bgBlueButtonNormal;
+        color: #ffffff;
+        &:hover {
+            background: @bgBlueButtonHover;
+        }
+        &:active {
+            background: @bgBlueButtonPressed;
+        }
+        &:disabled {
+            background: @bgBlueButtonDisabled;
+            color: rgba(0,0,0,0.20);
+        }
+    }
+    &.button_gray {
+        background: @bgGrayButtonNormal;
+        color: #000000;
+        &:hover {
+            background: @bgGrayButtonHover;
+        }
+        &:active {
+            background: @bgGrayButtonPressed;
+        }
+        &:disabled {
+            background: @bgGrayButtonDisabled;
+            color: rgba(0,0,0,0.20);
+        }
+    }
+}
