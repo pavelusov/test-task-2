@@ -13,7 +13,7 @@ module.exports = {
             'moment',
             'jquery-ui'
         ],
-        app: './app/app.js'
+        app: './source/app/app.js'
     },
     output: {
         path: `${__dirname}/dist/`,
@@ -73,7 +73,7 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            template: './app/templates/index.html'
+            template: './source/templates/index.html'
         })
     ],
     devServer: {
