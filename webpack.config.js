@@ -73,8 +73,12 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            template: './source/templates/index.html'
-        })
+            template: './source/index.html'
+        }),
+        new CopyWebpackPlugin([{
+            from: './source/assets/fonts',
+            to: 'assets/fonts'
+        }])
     ],
     devServer: {
         host: "0.0.0.0",

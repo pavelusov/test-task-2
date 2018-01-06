@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>Title</title>
+  <link rel="stylesheet" href="assets/fonts/icomoon/style.css">
+</head>
+<body>
+<div class="wrapperPage">
+  <header class="header util_clear-float">
+    <div class="header__logo"></div>
+    <div class="header__button">
+      <button class="button button_blue">Создать встречу</button>
+    </div>
+  </header>
+  <main>
+    <div class="timetable-wrapper">
+      <table class="timetable" cellspacing="0">
+        <thead class="timetable__header">
+        <tr>
+          <th class="left-column">Date</th>
+          <th class=""></th>
+          <th class="header-hour header-hour_past">8:00</th>
+          <th class="header-hour header-hour_past">9</th>
+          <th class="header-hour header-hour_past">10</th>
+          <th class="header-hour header-hour_past">11</th>
+          <th class="header-hour header-hour_past">12</th>
+          <th class="header-hour">13</th>
+          <th class="header-hour">14</th>
+          <th class="header-hour">15</th>
+          <th class="header-hour">16</th>
+          <th class="header-hour">17</th>
+          <th class="header-hour">18</th>
+          <th class="header-hour">19</th>
+          <th class="header-hour">20</th>
+          <th class="header-hour">21</th>
+          <th class="header-hour">22</th>
+          <th class="header-hour">23</th>
+        </tr>
+        </thead>
+
+        <tbody class="timetable__body">
+
+        <tr class="table-floor-wrapper mobile-hidden">
+          <td class="table-floor-wrapper_data" colspan="18">
+            <table class="table-floor">
+              <tr class="row-fill">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr class="table-floor-wrapper floor-selectable">
+          <td class="table-floor-wrapper_data" colspan="18">
+            <table class="table-floor">
+              <tr class="row-floor row-fill">
+                <td class="number-floor"> 7 этаж</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="row-room row-fill">
+                <td class="name-room">Ржавый Фред</td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-free"></td>
+                <td class="cell-free"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-free"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-free"></td>
+                <td class="cell-free"></td>
+                <td class="cell-free"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+              </tr>
+              <tr class="row-description row-fill">
+                <td class="description-room">3-6 человек</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="row-room row-fill">
+                <td class="name-room">Ржавый Фред</td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-free"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-free"></td>
+                <td class="cell-busy cell-busy_show-description">
+                  <div class="cell-busy__description" style="display: none">
+                    <div class="description-wrapper">
+                      <div class="description-button_edit"></div>
+                      <h3 class="description-title">Рассуждение о высоком</h3>
+                      <p class="description-text">
+                        <span class="description-text_date">14 декабря</span>
+                        <span class="description-text_time">
+                  <span class="time-start">15:00</span> &mdash; <span class="time-end">17:00</span>
+                </span>
+                        <span class="description-text_name-room">Желтый дом</span>
+                      </p>
+                      <div class="description-users">
+                        <div class="user-logo">
+                          <img src="https://avatars0.githubusercontent.com/u/13864001?s=460&v=4" alt="Pavel">
+                        </div>
+                        <div class="user-name">Pavel Usov</div>
+                        <div class="user-other">и <span class="user-other_count">12</span> участников</div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-free"></td>
+                <td class="cell-free"></td>
+                <td class="cell-free"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-free"></td>
+                <td class="cell-busy"></td>
+              </tr>
+              <tr class="row-description row-fill">
+                <td class="description-room">3-6 человек</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="row-room row-fill">
+                <td class="name-room">Ржавый Фред</td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-free"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-free"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-free"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-free"></td>
+                <td class="cell-free"></td>
+                <td class="cell-free"></td>
+                <td class="cell-busy"></td>
+              </tr>
+              <tr class="row-description row-fill">
+                <td class="description-room">3-6 человек</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr class="table-floor-wrapper floor-selectable">
+          <td class="table-floor-wrapper_data" colspan="18">
+            <table class="table-floor">
+              <tr class="row-floor row-fill">
+                <td class="number-floor"> 7 этаж</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="row-room row-fill">
+                <td class="name-room">Ржавый Фред</td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-free"></td>
+                <td class="cell-free"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-free"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-free"></td>
+                <td class="cell-free"></td>
+                <td class="cell-free"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+              </tr>
+              <tr class="row-description row-fill">
+                <td class="description-room">3-6 человек</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="row-room row-fill">
+                <td class="name-room">Ржавый Фред</td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-free"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-free"></td>
+                <td class="cell-busy cell-busy_show-description">
+                  <div class="cell-busy__description" style="display: none">
+                    <div class="description-wrapper">
+                      <div class="description-button_edit"></div>
+                      <h3 class="description-title">Рассуждение о высоком</h3>
+                      <p class="description-text">
+                        <span class="description-text_date">14 декабря</span>
+                        <span class="description-text_time">
+                  <span class="time-start">15:00</span> &mdash; <span class="time-end">17:00</span>
+                </span>
+                        <span class="description-text_name-room">Желтый дом</span>
+                      </p>
+                      <div class="description-users">
+                        <div class="user-logo">
+                          <img src="https://avatars0.githubusercontent.com/u/13864001?s=460&v=4" alt="Pavel">
+                        </div>
+                        <div class="user-name">Pavel Usov</div>
+                        <div class="user-other">и <span class="user-other_count">12</span> участников</div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-free"></td>
+                <td class="cell-free"></td>
+                <td class="cell-free"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-free"></td>
+                <td class="cell-busy"></td>
+              </tr>
+              <tr class="row-description row-fill">
+                <td class="description-room">3-6 человек</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="row-room row-fill">
+                <td class="name-room">Ржавый Фред</td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-free"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-free"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-free"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-free"></td>
+                <td class="cell-free"></td>
+                <td class="cell-free"></td>
+                <td class="cell-busy"></td>
+              </tr>
+              <tr class="row-description row-fill">
+                <td class="description-room">3-6 человек</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+        </td>
+        </tr>
+
+        <tr class="table-floor-wrapper floor-selectable">
+          <td class="table-floor-wrapper_data" colspan="18">
+            <table class="table-floor">
+              <tr class="row-floor row-fill">
+                <td class="number-floor"> 6 этаж</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="row-room room-busy row-fill">
+                <td class="name-room">Ржавый Фред</td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+              </tr>
+              <tr class="row-description row-fill">
+                <td class="description-room">3-6 человек</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="row-room row-fill">
+                <td class="name-room">Ржавый Фред</td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-free"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-free"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-free"></td>
+                <td class="cell-free"></td>
+                <td class="cell-free"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-free"></td>
+                <td class="cell-busy"></td>
+              </tr>
+              <tr class="row-description row-fill">
+                <td class="description-room">3-6 человек</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="row-room row-fill">
+                <td class="name-room">Ржавый Фред</td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-free"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-free"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-free"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-free"></td>
+                <td class="cell-free"></td>
+                <td class="cell-free"></td>
+                <td class="cell-busy"></td>
+              </tr>
+              <tr class="row-description row-fill">
+                <td class="description-room">3-6 человек</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+        </td>
+        </tr>
+
+        <tr class="table-floor-wrapper mobile-hidden">
+          <td class="table-floor-wrapper_data" colspan="18">
+            <table class="table-floor">
+              <tr class="row-fill">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </main>
+</div>
+</body>
+</html>
