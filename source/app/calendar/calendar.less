@@ -1,0 +1,57 @@
+@import "../../assets/less/variables";
+
+.timetable__calendar {
+    position: relative;
+    .timetable__calendar-datepicker {
+        cursor: pointer;
+        border: none;
+        outline: none;
+        color: @blue;
+        font-weight: bold;
+        font-size: 0.9375rem;
+        text-align: center;
+        width: 150px;
+    }
+    .leftButtonCalendar, .rightButtonCalendar {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: @bgGrayButtonNormal;
+        position: relative;
+        cursor: pointer;
+        &:before {
+            position: absolute;
+            display: inline;
+            font-size: 0.8rem;
+            font-family: icomoon;
+            top: 50%;
+            left: 50%;
+            color: @gray;
+        }
+    }
+    .leftButtonCalendar {
+        float: left;
+        margin-left: 10px;
+        &:before {
+            content: '\e901';
+            transform: translate(-65%, -50%);
+        }
+
+    }
+    .rightButtonCalendar {
+        float: right;
+        margin-right: 10px;
+        &:before {
+            content: '\e900';
+            transform: translate(-35%, -50%);
+        }
+    }
+    .date-value {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+        display: none;
+    }
+}

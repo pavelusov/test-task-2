@@ -11,7 +11,7 @@ module.exports = {
             'angular',
             'jquery',
             'moment',
-            'jquery-ui'
+            'jquery-ui/ui/widgets/datepicker'
         ],
         app: './source/app/app.js'
     },
@@ -45,6 +45,14 @@ module.exports = {
                 })
             },
             {
+                test: /\.(jpe?g|png|gif)$/i,
+                loader:"file-loader",
+                query:{
+                    name:'[name].[ext]',
+                    outputPath:'assets/images/'
+                }
+            },
+            {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader']
             },
@@ -63,6 +71,7 @@ module.exports = {
         }),
         new webpack.ProvidePlugin({
             'window.jQuery': 'jquery',
+            'window.$': 'jquery',
             $: 'jquery',
             jQuery: 'jquery',
             moment: 'moment'
