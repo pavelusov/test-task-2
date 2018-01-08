@@ -8,13 +8,13 @@
 </head>
 <body>
 <div class="wrapperPage">
-  <header class="header util_clear-float">
+  <header class="header">
     <div class="header__logo"></div>
     <div class="header__button">
-      <button class="button button_blue">Создать встречу</button>
+      <button class="button button_blue button__popup-new-meeting">Создать встречу</button>
     </div>
   </header>
-  <main>
+  <main class="main">
     <div class="timetable-wrapper">
       <table class="timetable" cellspacing="0">
         <thead class="timetable__header">
@@ -545,6 +545,48 @@
 
         </tbody>
       </table>
+    </div>
+    <div class="popup__new-meeting white">
+      <div class="popup__new-meeting_wrapper">
+        <div class="popup__button-close"></div>
+        <h2 class="popup-title">Новая встреча</h2>
+        <div class="popup__blocks-wrapper">
+          <div class="popup__block">
+            <div class="inputWrapper">
+              <label for="theme">Тема</label>
+              <input type="text" id="theme" placeholder="О чём будете говорить?">
+            </div>
+          </div>
+          <div class="popup__block">
+            <div class="inputWrapper inputWrapper_date">
+              <label for="date">Дата</label>
+              <input type="text" id="date">
+            </div>
+            <div class="inputWrapper inputWrapper_time time-dash">
+              <label for="timeStart">Начало</label>
+              <input type="text" id="timeStart" class="inputWrapper__timeStart">
+            </div>
+            <div class="inputWrapper inputWrapper_time">
+              <label for="timeEnd">Конец</label>
+              <input type="text" id="timeEnd" class="inputWrapper__timeEnd">
+            </div>
+          </div>
+        </div>
+        <div class="popup__blocks-wrapper">
+          <div class="popup__block">
+            <div class="inputWrapper">
+              <label for="participants">Участники</label>
+              <input type="text" id="participants">
+            </div>
+          </div>
+          <div class="popup__block">
+            <div class="inputWrapper">
+              <label for="yourRoom">Ваша переговорка</label>
+              <input type="text" id="yourRoom">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 </div>

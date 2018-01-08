@@ -11,7 +11,8 @@ module.exports = {
             'angular',
             'jquery',
             'moment',
-            'jquery-ui/ui/widgets/datepicker'
+            'jquery-ui/ui/widgets/datepicker',
+            'jquery-timepicker/jquery.timepicker'
         ],
         app: './source/app/app.js'
     },
