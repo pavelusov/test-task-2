@@ -1,5 +1,8 @@
-import './popup-windows.less';
+export {module} from './module';
+import './controller';
+import './less/popup-windows.less';
 import './timepicker';
+import './chosen';
 
 const clickButton = document.querySelector('.button__popup-new-meeting');
 const main = document.querySelector('.main');

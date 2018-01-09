@@ -12,7 +12,8 @@ module.exports = {
             'jquery',
             'moment',
             'jquery-ui/ui/widgets/datepicker',
-            'jquery-timepicker/jquery.timepicker'
+            'jquery-timepicker/jquery.timepicker',
+            'chosen-npm/public/chosen.jquery'
         ],
         app: './source/app/app.js'
     },
@@ -45,6 +46,7 @@ module.exports = {
                     use: ['css-loader', 'postcss-loader', 'less-loader']
                 })
             },
+
             {
                 test: /\.(jpe?g|png|gif)$/i,
                 loader:"file-loader",

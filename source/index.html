@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" ng-app="roomsApp">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no">
@@ -546,7 +546,7 @@
         </tbody>
       </table>
     </div>
-    <div class="popup__new-meeting white">
+    <div class="popup__new-meeting white" ng-controller="PopupNewMeetingCtrl">
       <div class="popup__new-meeting_wrapper">
         <div class="popup__button-close"></div>
         <h2 class="popup-title">Новая встреча</h2>
@@ -573,10 +573,33 @@
           </div>
         </div>
         <div class="popup__blocks-wrapper">
-          <div class="popup__block">
+          <div class="popup__block popup__participant">
             <div class="inputWrapper">
               <label for="participants">Участники</label>
-              <input type="text" id="participants">
+              <input id="participants"
+                      class="participant-input"
+                      ng-model="participantSearch"
+                      ng-focus="showListParticipants()"
+                      ng-blur="hideListParticipants()">
+              </input>
+            </div>
+            <div class="select-participants" ng-if="isShowListParticipants">
+              <div class="participant"
+                   ng-repeat="participant in participantsMeeting | filter: participantSearch"
+                   ng-click="addParticipant(participant)">
+                <div class="participant-logo">
+                  <img ng-src="{{ participant.image.path }}" alt="{{ participant.image.alt }}">
+                </div>
+                <div class="participant-name" ng-bind="participant.name"></div>
+              </div>
+            </div>
+            <div class="added-list-participants">
+              <div class="added-item-participant" ng-repeat="participant in participantsMeetingAdded track by $index">
+                <div class="participant-logo">
+                  <img ng-src="{{ participant.image.path }}" alt="{{ participant.image.alt }}">
+                </div>
+                <div class="participant-name">{{ participant.name }} <span class="participant-close" ng-click="removeParticipant(participant)"></span></div>
+              </div>
             </div>
           </div>
           <div class="popup__block">
