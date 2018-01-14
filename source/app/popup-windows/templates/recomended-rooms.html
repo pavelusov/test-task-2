@@ -1,0 +1,32 @@
+<div class="list-rooms">
+  <p class="list-room__title">Рекомендованная переговорка</p>
+  <div class="list-room__item"
+       ng-repeat="room in recomendedRooms | orderBy: 'time.start'"
+       ng-click="setRoom(room)"
+       ng-hide="isSelectedRoom()">
+    <div class="item-time">
+      <span class="time-start"
+            ng-bind="room.time.start"></span>
+      &mdash;
+      <span class="time-end"
+            ng-bind="room.time.end"></span>
+    </div>
+    <span class="item-date-name-room"
+          ng-bind="room.nameRoom"></span>
+    <span class="item-date-number-floor">{{ room.numberFloor }} этаж</span>
+  </div>
+  <div class="list-room__item list-room__item_blue list-room__item_close"
+       ng-repeat="room in selectedRoom">
+    <div class="item-time">
+      <span class="time-start"
+            ng-bind="room.time.start"></span>
+      &mdash;
+      <span class="time-end"
+            ng-bind="room.time.end"></span>
+    </div>
+    <span class="item-date-name-room"
+          ng-bind="room.nameRoom"></span>
+    <span class="item-date-number-floor">{{ room.numberFloor }} этаж</span>
+    <span class="list-room__item_close" ng-click="removeRoom($index)"></span>
+  </div>
+</div>

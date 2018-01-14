@@ -1,6 +1,6 @@
 import {module} from './module';
 
-module.controller('PopupNewMeetingCtrl', ($scope, $timeout) => {
+module.controller('PopupNewMeetingCtrl', ($scope, $timeout, $element) => {
     $scope.participantsMeeting = [
         {
             id: 1,
@@ -58,7 +58,7 @@ module.controller('PopupNewMeetingCtrl', ($scope, $timeout) => {
         },
     ];
     $scope.participantsMeetingAdded = [];
-
+    $scope.isVisiblePopup = false;
     $scope.isShowListParticipants = false;
     $scope.showListParticipants = () => {
         $scope.isShowListParticipants = true;
@@ -66,20 +66,36 @@ module.controller('PopupNewMeetingCtrl', ($scope, $timeout) => {
     $scope.hideListParticipants = () => {
         $timeout(() => {
             $scope.isShowListParticipants = false;
-    }, 200);
-
-
+        }, 200);
     };
-
-    $scope.addParticipant = (participant) => {
+    $scope.addParticipant = (participant, index) => {
         $scope.isShowListParticipants = true;
-        $scope.participantsMeetingAdded.push(participant);
+        if (!$scope.participantsMeetingAdded[index]) {
+            $scope.participantsMeetingAdded.push(participant);
+        }
     };
-    $scope.removeParticipant = (participant) => {
-        angular.forEach($scope.participantsMeetingAdded, (item, i) => {
-            if (participant.id === item.id) {
-                $scope.participantsMeetingAdded.splice(i, 1);
-            }
-        });
+    $scope.removeParticipant = (index) => {
+        $scope.participantsMeetingAdded.splice(index, 1);
     };
+
+    $scope.dateSelected = null;
+    $scope.$on('dateSelected', (e, date) => {
+        $scope.dateSelected = date;
+    });
+    $scope.getDate = (date) => {
+      $scope.$emit('dateSelected', date);
+    };
+
+    $scope.$on('popup.showPopupNewMeeting', () => {
+        $scope.isVisiblePopup = true;
+    });
+
+    $scope.hidePopup = () => {
+        $scope.isVisiblePopup = false;
+        $scope.$emit('buttons.hidePopupNewMeeting');
+    };
+
+    $scope.saveMeeting = () => {
+        //TODO save or update data for the meeting
+    }
 });

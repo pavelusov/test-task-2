@@ -9,7 +9,7 @@ timeTable.addEventListener('click', (e) => {
         let cellBusy = e.target;
 
         cellBusy.classList.add('cell-busy_show-description');
-        cellBusy.innerHTML = templateTooltip;
+        cellBusy.insertAdjacentHTML('afterBegin', templateTooltip);
         cellBusy.addEventListener('click', () => {
             cellBusy.innerHTML = '';
         })

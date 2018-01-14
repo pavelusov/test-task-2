@@ -6,6 +6,7 @@
 html {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: @fontSizeDesktop;
+    height: 100%;
     @media @mobile {
         font-size: @fontSizeMobile;
     }
@@ -14,10 +15,12 @@ html {
 body {
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 .wrapperPage {
     width: 1280px;
+    height: 100%;
     margin: 0 auto;
     @media @mobile {
         width: 100%;
@@ -25,4 +28,3 @@ body {
 }
 
 @import "buttons";
-@import "header";

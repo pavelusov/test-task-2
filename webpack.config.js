@@ -12,6 +12,7 @@ module.exports = {
             'jquery',
             'moment',
             'jquery-ui/ui/widgets/datepicker',
+            'jquery-ui/ui/widgets/slider',
             'jquery-timepicker/jquery.timepicker',
             'chosen-npm/public/chosen.jquery'
         ],
@@ -46,12 +47,11 @@ module.exports = {
                     use: ['css-loader', 'postcss-loader', 'less-loader']
                 })
             },
-
             {
                 test: /\.(jpe?g|png|gif)$/i,
                 loader:"file-loader",
                 query:{
-                    name:'[name].[ext]',
+                    name:'[path][name].[ext]',
                     outputPath:'assets/images/'
                 }
             },
@@ -70,6 +70,10 @@ module.exports = {
                 use: {
                     loader: 'html-loader'
                 }
+            },
+            {
+                test: /\.yaml$/,
+                loaders: 'json-loader!yaml-loader'
             }
         ]
     },

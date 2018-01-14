@@ -1,3 +1,1 @@
-const module = angular.module('popup-windows', []);
-
-export {module};
+export const module = angular.module('popup-windows', []);

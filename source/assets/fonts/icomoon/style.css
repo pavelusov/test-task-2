@@ -34,7 +34,6 @@
 }
 .icon-close:before {
   content: "\e903";
-  color: #afb4b8;
 }
 .icon-edit:before {
   content: "\e904";

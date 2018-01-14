@@ -1,0 +1,15 @@
+- time:
+    start: '09:00'
+    end: '10:00'
+  nameRoom: 'Поле непаханое'
+  numberFloor: 5
+- time:
+    start: '12:00'
+    end: '12:30'
+  nameRoom: 'Поле паханое'
+  numberFloor: 2
+- time:
+    start: '08:00'
+    end: '10:00'
+  nameRoom: 'Темная башня'
+  numberFloor: 5

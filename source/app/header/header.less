@@ -1,0 +1,31 @@
+@import "../../assets/less/variables";
+
+.header {
+    width: 1280px;
+    height: 70px;
+    margin: 0 auto;
+    border-bottom: 1px solid @lightGray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    @media @desktop {
+        width: 100%;
+    }
+    .header__logo {
+        width: 173.9px;
+        height: 24.4px;
+        margin: 7px 0 7px 10px;
+        background: url("../../assets/svg/logo.svg") no-repeat;
+    }
+    @media @mobile {
+        padding: 15px 20px;
+        .header__button {
+            display: none;
+        }
+    }
+}
