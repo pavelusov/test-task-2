@@ -7,20 +7,19 @@
 }
 
 .popup__new-meeting {
-    position: absolute;
-    top: 0;
+    position: fixed;
+    top: 70px;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: -1;
     opacity: 0;
-    height: 100%;
-    padding-top: 70px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background: #ffffff;
     &.toggle-visible-popup {
-        z-index: 10;
+        z-index: 200;
         opacity: 1;
         transition: all 0.3s;
     }
@@ -31,6 +30,10 @@
         width: 880px;
         margin: 0 auto;
         padding-top: 15px;
+        @media @tablet {
+            width: 100%;
+            padding: 20px;
+        }
         .popup__button-close {
             float: right;
             width: 24px;
@@ -55,11 +58,29 @@
         .popup__blocks-wrapper {
             display: flex;
             justify-content: space-between;
+            @media @tablet {
+                justify-content: space-around;
+            }
+            @media @tablet {
+                flex-direction: column;
+            }
             .popup__block {
                 width: 420px;
                 display: flex;
                 justify-content: space-between;
                 margin-bottom: 24px;
+                @media @tablet {
+                    width: 100%;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                &.popup__block-date {
+                    @media @tablet {
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                    }
+                }
                 .inputWrapper {
                     width: 100%;
                     label {
@@ -84,22 +105,28 @@
                     &.inputWrapper_date {
                         width: 238px;
                         position: relative;
-                            &:after {
-                                content: '\e902';
-                                font-family: icomoon;
-                                display: inline;
-                                position: absolute;
-                                right: 12px;
-                                bottom: 13px;
-                                font-size: 12px;
-                                color: @gray;
-                            }
+                        @media @tablet {
+                            width: 100%;
+                        }
+                        &:after {
+                            content: '\e902';
+                            font-family: icomoon;
+                            display: inline;
+                            position: absolute;
+                            right: 12px;
+                            bottom: 13px;
+                            font-size: 12px;
+                            color: @gray;
+                        }
 
                     }
 
                     &.inputWrapper_time {
                         width: 72px;
                         position: relative;
+                        @media @tablet {
+                            width: 45%;
+                        }
                         &.time-dash {
                             &:after {
                                 content: '\2014';
@@ -109,6 +136,9 @@
                                 bottom: 0.875rem;
                                 font-size: 0.7rem;
                                 font-weight: 600;
+                                @media @tablet {
+                                    display: none;
+                                }
                             }
                         }
                     }

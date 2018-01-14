@@ -8,8 +8,7 @@
 </head>
 <body ng-controller="BasePageCtrl">
 <div class="wrapperPage">
-  <header class="header"
-          ng-controller="HeaderCtrl">
+  <header class="header" ng-controller="HeaderCtrl">
     <div class="header__logo"></div>
     <div class="header__button">
       <button class="button button_blue button__popup-new-meeting"
@@ -18,7 +17,7 @@
     </div>
   </header>
   <main class="main">
-    <div class="timetable-wrapper">
+    <div class="timetable-wrapper" ng-controller="timetableCtrl">
       <table class="timetable" cellspacing="0">
         <thead class="timetable__header">
         <tr>
@@ -109,15 +108,15 @@
                 <td class="cell-busy"></td>
                 <td class="cell-busy"></td>
                 <td class="cell-busy"></td>
-                <td class="cell-free"></td>
-                <td class="cell-free"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
                 <td class="cell-busy"></td>
                 <td class="cell-busy"></td>
-                <td class="cell-free"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
                 <td class="cell-busy"></td>
-                <td class="cell-free"></td>
-                <td class="cell-free"></td>
-                <td class="cell-free"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
                 <td class="cell-busy"></td>
                 <td class="cell-busy"></td>
               </tr>
@@ -146,19 +145,19 @@
                 <td class="cell-busy"></td>
                 <td class="cell-busy"></td>
                 <td class="cell-busy"></td>
-                <td class="cell-free"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
                 <td class="cell-busy"></td>
                 <td class="cell-busy"></td>
                 <td class="cell-busy"></td>
-                <td class="cell-free"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
                 <td class="cell-busy"></td>
                 <td class="cell-busy"></td>
                 <td class="cell-busy"></td>
-                <td class="cell-free"></td>
-                <td class="cell-free"></td>
-                <td class="cell-free"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
                 <td class="cell-busy"></td>
-                <td class="cell-free"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
                 <td class="cell-busy"></td>
               </tr>
               <tr class="row-description row-fill">
@@ -187,18 +186,18 @@
                 <td class="cell-busy"></td>
                 <td class="cell-busy"></td>
                 <td class="cell-busy"></td>
-                <td class="cell-free"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
                 <td class="cell-busy"></td>
-                <td class="cell-free"></td>
-                <td class="cell-busy"></td>
-                <td class="cell-busy"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
                 <td class="cell-busy"></td>
                 <td class="cell-busy"></td>
-                <td class="cell-free"></td>
                 <td class="cell-busy"></td>
-                <td class="cell-free"></td>
-                <td class="cell-free"></td>
-                <td class="cell-free"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
                 <td class="cell-busy"></td>
               </tr>
               <tr class="row-description row-fill">
@@ -256,15 +255,15 @@
                 <td class="cell-busy"></td>
                 <td class="cell-busy"></td>
                 <td class="cell-busy"></td>
-                <td class="cell-free"></td>
-                <td class="cell-free"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
                 <td class="cell-busy"></td>
                 <td class="cell-busy"></td>
-                <td class="cell-free"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
                 <td class="cell-busy"></td>
-                <td class="cell-free"></td>
-                <td class="cell-free"></td>
-                <td class="cell-free"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
                 <td class="cell-busy"></td>
                 <td class="cell-busy"></td>
               </tr>
@@ -293,19 +292,19 @@
                 <td class="cell-busy"></td>
                 <td class="cell-busy"></td>
                 <td class="cell-busy"></td>
-                <td class="cell-free"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
                 <td class="cell-busy"></td>
                 <td class="cell-busy"></td>
                 <td class="cell-busy"></td>
-                <td class="cell-free"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
                 <td class="cell-busy"></td>
                 <td class="cell-busy"></td>
                 <td class="cell-busy"></td>
-                <td class="cell-free"></td>
-                <td class="cell-free"></td>
-                <td class="cell-free"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
                 <td class="cell-busy"></td>
-                <td class="cell-free"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
                 <td class="cell-busy"></td>
               </tr>
               <tr class="row-description row-fill">
@@ -334,18 +333,18 @@
                 <td class="cell-busy"></td>
                 <td class="cell-busy"></td>
                 <td class="cell-busy"></td>
-                <td class="cell-free"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
                 <td class="cell-busy"></td>
-                <td class="cell-free"></td>
-                <td class="cell-busy"></td>
-                <td class="cell-busy"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
                 <td class="cell-busy"></td>
                 <td class="cell-busy"></td>
-                <td class="cell-free"></td>
                 <td class="cell-busy"></td>
-                <td class="cell-free"></td>
-                <td class="cell-free"></td>
-                <td class="cell-free"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
                 <td class="cell-busy"></td>
               </tr>
               <tr class="row-description row-fill">
@@ -440,19 +439,19 @@
                 <td class="cell-busy"></td>
                 <td class="cell-busy"></td>
                 <td class="cell-busy"></td>
-                <td class="cell-free"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
                 <td class="cell-busy"></td>
                 <td class="cell-busy"></td>
                 <td class="cell-busy"></td>
-                <td class="cell-free"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
                 <td class="cell-busy"></td>
                 <td class="cell-busy"></td>
                 <td class="cell-busy"></td>
-                <td class="cell-free"></td>
-                <td class="cell-free"></td>
-                <td class="cell-free"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
                 <td class="cell-busy"></td>
-                <td class="cell-free"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
                 <td class="cell-busy"></td>
               </tr>
               <tr class="row-description row-fill">
@@ -481,18 +480,18 @@
                 <td class="cell-busy"></td>
                 <td class="cell-busy"></td>
                 <td class="cell-busy"></td>
-                <td class="cell-free"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
                 <td class="cell-busy"></td>
-                <td class="cell-free"></td>
-                <td class="cell-busy"></td>
-                <td class="cell-busy"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
                 <td class="cell-busy"></td>
                 <td class="cell-busy"></td>
-                <td class="cell-free"></td>
                 <td class="cell-busy"></td>
-                <td class="cell-free"></td>
-                <td class="cell-free"></td>
-                <td class="cell-free"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
+                <td class="cell-busy"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
+                <td class="cell-free" create-meeting ng-click="createMeeting()"></td>
                 <td class="cell-busy"></td>
               </tr>
               <tr class="row-description row-fill">
@@ -549,75 +548,76 @@
         </tbody>
       </table>
     </div>
-    <div class="popup__new-meeting white"
-         ng-controller="PopupNewMeetingCtrl"
-         ng-class="{'toggle-visible-popup': isVisiblePopup}">
-      <div class="popup__new-meeting_wrapper">
-        <div class="popup__button-close" ng-click="hidePopup()"></div>
-        <h2 class="popup-title">Новая встреча</h2>
-        <div class="popup__blocks-wrapper">
-          <div class="popup__block">
-            <div class="inputWrapper">
-              <label for="theme">Тема</label>
-              <input type="text" id="theme" placeholder="О чём будете говорить?">
-            </div>
-          </div>
-          <div class="popup__block">
-            <div class="inputWrapper inputWrapper_date">
-              <label for="date">Дата</label>
-              <input type="text" id="date" datepicker data-set-date="getDate">
-            </div>
-            <div class="inputWrapper inputWrapper_time time-dash">
-              <label for="timeStart">Начало</label>
-              <input type="text" id="timeStart" class="inputWrapper__timeStart">
-            </div>
-            <div class="inputWrapper inputWrapper_time">
-              <label for="timeEnd">Конец</label>
-              <input type="text" id="timeEnd" class="inputWrapper__timeEnd">
-            </div>
+
+  </main>
+  <div class="popup__new-meeting white"
+       ng-controller="PopupNewMeetingCtrl"
+       ng-class="{'toggle-visible-popup': isVisiblePopup}">
+    <div class="popup__new-meeting_wrapper">
+      <div class="popup__button-close" ng-click="hidePopup()"></div>
+      <h2 class="popup-title">Новая встреча</h2>
+      <div class="popup__blocks-wrapper">
+        <div class="popup__block">
+          <div class="inputWrapper">
+            <label for="theme">Тема</label>
+            <input type="text" id="theme" placeholder="О чём будете говорить?">
           </div>
         </div>
-        <div class="popup__blocks-wrapper">
-          <div class="popup__block popup__participant">
-            <div class="inputWrapper">
-              <label for="participants">Участники</label>
-              <input id="participants"
-                      class="participant-input"
-                      ng-model="participantSearch"
-                      ng-focus="showListParticipants()"
-                      ng-blur="hideListParticipants()">
-              </input>
-            </div>
-            <div class="select-participants" ng-show="isShowListParticipants">
-              <div class="participant"
-                   ng-repeat="participant in participantsMeeting | filter: participantSearch"
-                   ng-click="addParticipant(participant, $index)">
-                <div class="participant-logo">
-                  <img ng-src="{{ participant.image.path }}" alt="{{ participant.image.alt }}">
-                </div>
-                <div class="participant-name" ng-bind="participant.name"></div>
-              </div>
-            </div>
-            <div class="added-list-participants">
-              <div class="added-item-participant" ng-repeat="participant in participantsMeetingAdded">
-                <div class="participant-logo">
-                  <img ng-src="{{ participant.image.path }}" alt="{{ participant.image.alt }}">
-                </div>
-                <div class="participant-name">{{ participant.name }} <span class="participant-close" ng-click="removeParticipant($index)"></span></div>
-              </div>
-            </div>
+        <div class="popup__block popup__block-date">
+          <div class="inputWrapper inputWrapper_date">
+            <label for="date">Дата</label>
+            <input type="text" id="date" datepicker data-set-date="getDate">
           </div>
-          <div class="popup__block">
-            <recomended-rooms></recomended-rooms>
+          <div class="inputWrapper inputWrapper_time time-dash">
+            <label for="timeStart">Начало</label>
+            <input type="text" id="timeStart" class="inputWrapper__timeStart">
+          </div>
+          <div class="inputWrapper inputWrapper_time">
+            <label for="timeEnd">Конец</label>
+            <input type="text" id="timeEnd" class="inputWrapper__timeEnd">
           </div>
         </div>
       </div>
-      <div class="popup__footer">
-        <button class="button button_gray" ng-click="hidePopup()">Отмена</button>
-        <button class="button button_gray" ng-click="saveMeeting()">Сохранить</button>
+      <div class="popup__blocks-wrapper">
+        <div class="popup__block popup__participant">
+          <div class="inputWrapper">
+            <label for="participants">Участники</label>
+            <input id="participants"
+                   class="participant-input"
+                   ng-model="participantSearch"
+                   ng-focus="showListParticipants()"
+                   ng-blur="hideListParticipants()">
+            </input>
+          </div>
+          <div class="select-participants" ng-show="isShowListParticipants">
+            <div class="participant"
+                 ng-repeat="participant in participantsMeeting | filter: participantSearch"
+                 ng-click="addParticipant(participant, $index)">
+              <div class="participant-logo">
+                <img ng-src="{{ participant.image.path }}" alt="{{ participant.image.alt }}">
+              </div>
+              <div class="participant-name" ng-bind="participant.name"></div>
+            </div>
+          </div>
+          <div class="added-list-participants">
+            <div class="added-item-participant" ng-repeat="participant in participantsMeetingAdded">
+              <div class="participant-logo">
+                <img ng-src="{{ participant.image.path }}" alt="{{ participant.image.alt }}">
+              </div>
+              <div class="participant-name">{{ participant.name }} <span class="participant-close" ng-click="removeParticipant($index)"></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="popup__block">
+          <recomended-rooms></recomended-rooms>
+        </div>
       </div>
     </div>
-  </main>
+    <div class="popup__footer">
+      <button class="button button_gray" ng-click="hidePopup()">Отмена</button>
+      <button class="button button_gray" ng-click="saveMeeting()">Сохранить</button>
+    </div>
+  </div>
 </div>
 </body>
 </html>
